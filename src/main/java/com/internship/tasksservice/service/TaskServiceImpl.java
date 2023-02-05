@@ -21,7 +21,6 @@ public class TaskServiceImpl implements TaskService {
     private final TaskRepository taskRepository;
     private final TaskMapper taskMapper;
 
-
     @Override
     @Transactional
     public TaskDto addTask(Long taskId, TaskDto taskDto, Long userId) {
