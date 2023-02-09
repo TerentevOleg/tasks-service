@@ -41,11 +41,10 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<TaskDto> getAllTasks(Long userId) {
-        return null;
-        /*return taskRepository.getAllByUserId(userId)
+        return taskRepository.getAllByUserId(userId)
                 .stream()
-                .map(TaskMapper::toDto)
-                .collect(Collectors.toList());*/
+                .map(taskMapper::toDto)
+                .collect(Collectors.toList());
     }
 
     @Override
